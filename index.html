@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/styles/favicon.ico" type="image/x-icon">
     <title>Portfólio | Maria Regina</title>
 </head>
 <body> 
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
             </ul>
             <button onclick="scrollToSection('contact')">Contrate-me</button>
         </nav>
@@ -21,18 +21,29 @@
 
     <section class="home" id="home">
         <div class="title">
-            <h1>Portfólio</h1>
+            <h1>Portfólio </h1>
             <h3>Maria Regina</h3>
         </div>
         <button onclick="scrollToSection('about')">Ver mais informações</button>
     </section>
 
     <section class="about" id="about">
-        <div>oi</div> 
+        <container class="about-container">
+            <div class="info">
+                <h1>Eu me chamo Maria Regina,</h1>
+                <p>Sou bacharela em <span>Ciência da Computação</span> pela UEPB (Universidade Estadual da Paraíba) e trabalho com <span>Web Design</span>, <span>Desenvolvimento Frontend</span> e <span>Design Gráfico</span>. Ao clicar no botão você pode fazer o dowload do meu currículo e conferir mais informações. </p>
+                <p>Aqui, você poderá ver os meus principais projetos em cada uma dessas áreas. Espero que goste!</p>
+            </div>
+
+            <div class="more-info">
+                <img src="./assets/media/img/photo-profile.jpeg" alt="Foto de Maria Regina">
+                <a href="./assets/media/pdf/Currículo-MR.pdf" download="Currículo-Maria Regina.pdf"><button>Baixar CV</button></a>
+            </div>
+        </container> 
     </section>
 
     <section class="projects" id="projects">
-        <div>oi dnv</div>
+        <h1>Meus Projetos</h1>
     </section>
 
     <section class="contact" id="contact">
@@ -44,7 +55,6 @@
     </footer>
 
     <!--Scripts JavaScript-->
-    
     <script src="./assets/js/scroll.js"></script>
 
 </body>
