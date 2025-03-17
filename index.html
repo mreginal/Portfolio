@@ -44,10 +44,63 @@
 
     <section class="projects" id="projects">
         <h1>Meus Projetos</h1>
+        <div class="cards">
+            <a href="#" class="card-button">
+                <img src="./assets/media/icons/icon-brain.png" alt="Branding">
+                <span>Branding</span>
+            </a>
+            <a href="#" class="card-button">
+                <img src="./assets/media/icons/icon-social.png" alt="Social Media">
+                <span>Social Media</span>
+            </a>
+            <a href="#" class="card-button">
+                <img src="./assets/media/icons/icon-webdesign.png" alt="Web Design">
+                <span>Web Design</span>
+            </a>
+            <a href="#" class="card-button">
+                <img src="./assets/media/icons/icon-flyer.png" alt="Flyers">
+                <span>Flyers</span>
+            </a>
+        </div>
     </section>
 
     <section class="contact" id="contact">
-        <div>ola dessa vez</div>
+        <div class="contact-container">
+            <div class="contact-infos">
+                <h1>Entre em Contato</h1>
+                <p>Me siga nas redes sociais ou envie uma mensagem</p>
+                <div class="social">
+                    <div class="links">
+                        <img src="./assets/media/icons/icon-linkedin.png" alt="LinkedIn">
+                        <a href="">Maria Regina</a>
+                    </div>
+                    <div class="links">
+                        <img src="./assets/media/icons/icon-instagram.png" alt="Instagram">
+                        <a href="">@find.regina</a>
+                    </div>
+                    <div class="links">
+                        <img src="./assets/media/icons/icon-facebook.png" alt="Facebook">
+                        <a href="">Regina Lucena</a>
+                    </div>
+                    <div class="links">
+                        <img src="./assets/media/icons/icon-whatsapp.png" alt="Whatsapp">
+                        <a href="https://wa.me/5583981358617?text=Olá,%20gostaria%20de%20te%20contratar%20para%20um%20projeto!">+55 (83) 98135-8617</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <form id="contactForm" action="https://formsubmit.co/mreginalucena@gmail.com" method="POST">
+                    <h2>Envie uma mensagem</h2>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    <textarea name="message" rows="4" placeholder="Digite a mensagem" required></textarea>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contact">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
     </section>
     
     <footer>
@@ -56,6 +109,7 @@
 
     <!--Scripts JavaScript-->
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/submit.js"></script>
 
 </body>
 </html>
