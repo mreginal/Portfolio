@@ -468,3 +468,171 @@ footer{
         height: 70px;
     }
 }
+
+/*----Estilização para smartphone----*/
+
+@media (min-width:320px) and (max-width:680px){
+
+    header{
+        display: none;
+    }
+
+    button{
+        font-size: 1em;
+        height: 60px;
+    }
+
+    /*----Home----*/
+
+    .home, .contact{
+        background-image: url('../media/img/bg-s.png');
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h1{
+        font-size: 2.5em;
+    }
+
+    .title h3{
+        font-size: 1em;
+        letter-spacing: 16px;
+    }
+    
+    /*----Sobre----*/
+    .about{
+        display: flex;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info h1{
+        font-size: 1.2em;
+    }
+
+    .info p{
+        font-size: 1em;
+    }
+
+    /*----Projetos----*/
+
+    .projects h1{
+        font-size: 1.5em;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-button{
+        height: 80px;
+        width: 280px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        font-size: 1.5em;
+    }
+
+    .card-button img{
+        height: 45px;
+    }
+
+    .card-button span{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .card-button:hover{
+        box-shadow: 0px 4px 60px 5px var(--color-01);
+    }
+
+    /*----Contato----*/
+
+    .contact{
+        line-height: 20px;
+    }
+    
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-infos{
+        width: 80%;
+        padding: 0 10%;
+    }
+
+    .contact-infos h1{
+        font-size: 1.5em;
+    }
+
+    .contact-infos p{
+        font-size: 1em;
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social img{
+        height: 40px;
+    }
+
+    .social span{
+        display: none;
+    }
+
+    form{
+        margin-top: -100px;
+        height: 450px;
+        width: 250px;
+        font-size: 1em;
+        gap: 30px;
+    }
+
+    form input, form textarea{
+        font-size: 1em;
+        width: 80%;
+    }
+
+    form button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 120px;
+        font-size: 1em;
+    }
+
+    /*----Rodapé----*/
+
+    footer{
+        height: 8vh;
+        font-size: 0.8em;
+    }
+
+    /*----Nichos----*/
+
+    .niche h2{
+        font-size: 1.5em;
+    }
+
+    .pagination img{
+        height: 45px;
+    }
+}
