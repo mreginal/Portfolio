@@ -11,6 +11,8 @@
     --font: "Poppins", sans-serif;
 }
 
+/*Estilos gerais*/
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -28,6 +30,8 @@ body{
     flex-direction: column;
     overflow-x: hidden;
 }
+
+/*Barra de navegação - cabeçalho*/
 
 header{
     z-index: 10;
@@ -67,6 +71,8 @@ nav a:hover{
     font-weight: 600;
 }
 
+/*Botões*/
+
 button{
     height: 40px;
     background: var(--color-03);
@@ -83,6 +89,8 @@ button:hover{
     background: var(--color-04);
 }
 
+/*Sessões principais*/
+
 section{
     height: 100vh;
     width: 100vw;
@@ -91,6 +99,8 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+/*------Home--------*/
 
 .home{
     background-image: url('../media/img/bg-l.png');
@@ -118,6 +128,8 @@ section{
     color: var(--color-02);
     letter-spacing: 17px;
 }
+
+/*------Sobre--------*/
 
 .about-container{
     display: grid;
@@ -156,6 +168,8 @@ section{
     border-radius: 50%;
 }
 
+/*-------Projetos---------*/
+
 .projects h1{
     margin: 50px;
     text-transform: uppercase;
@@ -189,6 +203,8 @@ section{
 .card-button:hover{
     box-shadow: 0px 4px 60px 10px var(--color-02);
 }
+
+/*-----Contato-------*/
 
 .contact-container{
     display: grid;
@@ -231,6 +247,8 @@ section{
 }
 
 .links a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--color-02);
     font-weight: 600;
@@ -276,6 +294,8 @@ form button{
     align-self: flex-end;
 }
 
+/*-------Nichos--------*/
+
 .pagination{
     width: 100%;
     display: flex;
@@ -295,9 +315,156 @@ form button{
     text-underline-offset: 10px;
 }
 
+/*-----Rodapé-------*/
+
 footer{
     width: 100vw;
     display: flex;
     justify-content: center;
     color: var(--color-02);
+}
+
+/*Estilização para tablets*/
+
+@media (min-width:481px) and (max-width:1024px){
+
+    header{
+        display: none;
+    }
+
+    button{
+        font-size: 1.5em;
+        height: 80px;
+    }
+
+    /*----Home----*/
+
+    .home, .contact{
+        background-image: url('../media/img/bg-m.png');
+    }
+
+    /*----Sobre----*/
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info h1{
+        font-size: 2em;
+    }
+
+    .info p{
+        font-size: 1.5em;
+    }
+
+    /*----Projetos----*/
+
+    .projects h1{
+        font-size: 2.5em;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-button{
+        height: 150px;
+        width: 600px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        font-size: 2em;
+    }
+
+    .card-button img{
+        height: 70px;
+    }
+
+    .card-button span{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .card-button:hover{
+        box-shadow: 0px 4px 60px 5px var(--color-01);
+    }
+
+    /*----Contato----*/
+
+    .contact{
+        line-height: 50px;
+    }
+    
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-infos{
+        width: 82%;
+        padding: 0 10%;
+    }
+
+    .contact-infos h1{
+        font-size: 2.5em;
+    }
+
+    .contact-infos p{
+        font-size: 1.5em;
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social img{
+        height: 60px;
+    }
+
+    .social span{
+        display: none;
+    }
+
+    form{
+        height: 550px;
+        width: 450px;
+        font-size: 1.5em;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    form input, form textarea{
+        font-size: 0.8em;
+        width: 90%;
+    }
+
+    form button{
+        height: 60px;
+        width: 200px;
+        font-size: 1em;
+    }
+
+    /*----Rodapé----*/
+
+    footer{
+        height: 8vh;
+        font-size: 1.2em;
+    }
+
+    /*----Nichos----*/
+
+    .niche h2{
+        font-size: 2.5em;
+    }
+
+    .pagination img{
+        height: 70px;
+    }
 }
