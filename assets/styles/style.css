@@ -308,11 +308,26 @@ form button{
     height: 40px;
 }
 
+.niche{
+    margin-top: 40px;
+}
+
 .niche h2{
     color: var(--color-02);
     text-transform: uppercase;
     text-decoration: underline var(--color-03);
     text-underline-offset: 10px;
+}
+
+.scroll-niche{
+    width: 650px;
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /*-----Rodapé-------*/
@@ -459,9 +474,16 @@ footer{
     }
 
     /*----Nichos----*/
+    .niche{
+        margin-top: 0px;
+    }
 
     .niche h2{
         font-size: 2.5em;
+    }
+
+    .scroll-niche{
+        height: 800px;
     }
 
     .pagination img{
@@ -628,10 +650,22 @@ footer{
 
     /*----Nichos----*/
 
+    .niche{
+        margin-top: 0px;
+    }
+    
     .niche h2{
         font-size: 1.5em;
     }
 
+    .scroll-niche{
+        width: 305px;
+        height: 450px;
+    }
+
+    .scroll-niche img{
+        width: 305px;
+    }
     .pagination img{
         height: 45px;
     }
